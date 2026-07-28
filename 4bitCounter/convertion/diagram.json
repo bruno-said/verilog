@@ -1,0 +1,127 @@
+{
+    "drawflow": {
+        "Home": {
+            "data": {
+                "1": {
+                    "id": 1,
+                    "name": "input",
+                    "data": {
+                        "input_pin": "",
+                        "name101input": "clk"
+                    },
+                    "class": "input",
+                    "html": "\n          <div class=\"box\">\n            <p><b>Input Pin</b></p>\n            <input type=\"text\" df-name101input placeholder=\"\">\n          </div>\n        ",
+                    "typenode": false,
+                    "inputs": {},
+                    "outputs": {
+                        "output_1": {
+                            "connections": [
+                                {
+                                    "node": "4",
+                                    "output": "input_1"
+                                }
+                            ]
+                        }
+                    },
+                    "inouts": {},
+                    "pos_x": 21.22222222222222,
+                    "pos_y": 96.11111111111111
+                },
+                "2": {
+                    "id": 2,
+                    "name": "input",
+                    "data": {
+                        "input_pin": "",
+                        "name101input": "rst"
+                    },
+                    "class": "input",
+                    "html": "\n          <div class=\"box\">\n            <p><b>Input Pin</b></p>\n            <input type=\"text\" df-name101input placeholder=\"\">\n          </div>\n        ",
+                    "typenode": false,
+                    "inputs": {},
+                    "outputs": {
+                        "output_1": {
+                            "connections": [
+                                {
+                                    "node": "4",
+                                    "output": "input_2"
+                                }
+                            ]
+                        }
+                    },
+                    "inouts": {},
+                    "pos_x": 19,
+                    "pos_y": 278
+                },
+                "3": {
+                    "id": 3,
+                    "name": "output",
+                    "data": {
+                        "output_pin": "",
+                        "name101output": "count [3:0]"
+                    },
+                    "class": "output",
+                    "html": "\n          <div class=\"box\">\n            <p><b>Output pin</b></p>\n            <input type=\"text\" df-name101output placeholder=\"\">\n          </div>\n        ",
+                    "typenode": false,
+                    "inputs": {
+                        "input_1": {
+                            "connections": [
+                                {
+                                    "node": "4",
+                                    "input": "output_1"
+                                }
+                            ]
+                        }
+                    },
+                    "outputs": {},
+                    "inouts": {},
+                    "pos_x": 751,
+                    "pos_y": 180.88888888888889
+                },
+                "4": {
+                    "id": 4,
+                    "name": "blk1837",
+                    "data": {
+                        "blkInputs": "clk, rst_n",
+                        "blkOutputs": "count[3:0]",
+                        "blkInouts": "",
+                        "parameters": []
+                    },
+                    "class": "blk1837",
+                    "html": "\n                  <div class=\"box\">\n                    <center>\n                      <img onload='updateConnectionList(editor.drawflow)' draggable=\"false\" style=\"user-select: none;\" onmousedown=\"return false;\" src=/beta/v1/admin/crud/assets/uploads/files/68c31ac789800_counter.png width=100>\n                      <p><b>up_counter</b></p> \n                      <div class=\"parameters\">\n                        \n                      </div>\n                      <a href=\"#\" onclick=\"showInfoModal('Block', 1837); return false;\"> [info]</a> \n                      <a href=\"#\" onclick=\"showDetailsModal('Block', 1837); return false;\"> [details]</a>\n                    </center> \n                  </div>\n                ",
+                    "typenode": false,
+                    "inputs": {
+                        "input_1": {
+                            "connections": [
+                                {
+                                    "node": "1",
+                                    "input": "output_1"
+                                }
+                            ]
+                        },
+                        "input_2": {
+                            "connections": [
+                                {
+                                    "node": "2",
+                                    "input": "output_1"
+                                }
+                            ]
+                        }
+                    },
+                    "outputs": {
+                        "output_1": {
+                            "connections": [
+                                {
+                                    "node": "3",
+                                    "output": "input_1"
+                                }
+                            ]
+                        }
+                    },
+                    "inouts": {},
+                    "pos_x": 380,
+                    "pos_y": 132.88888888888889
+                }
+            }
+        }
+    }
+}
